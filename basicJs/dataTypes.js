@@ -15,6 +15,9 @@ let state; //undefined
 //null => standalone value
 //undefined => 
 // symbol => unique
-
 //object
-console.log(typeof age);
+
+console.log(typeof age); //type will be number
+console.log(typeof undefined); // type will be null
+console.log(typeof null); //type will be object
+
