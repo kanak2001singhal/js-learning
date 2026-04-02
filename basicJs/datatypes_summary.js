@@ -33,3 +33,40 @@ const myFuction = function(){
 
 console.log(typeof bigNumber);
 console.log(typeof myFuction);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(primitive) , Heap(non-primitive)
+
+//example 1 - stack
+
+let firstValue = "kanak"
+ let secondValue = firstValue
+
+ secondValue = "kanak singhal"
+ console.log(firstValue);
+ console.log(secondValue);
+
+ //so here we have taken 2 variable so here the second variable will take the copy of first value so when we change thebsecond value the first value will not chnage as it is assigned in stack memory
+
+
+ //exmaple 2 - heap 
+
+ let userOne = {
+    email : "user@google.com",
+    upi : "user@upi"
+
+ }
+
+ let userTwo = userOne 
+
+ userTwo.email = "kanak@gmail.com"
+ console.log(userOne);
+  console.log(userTwo);
+
+  // so here we use an object so it will assign in heap memory so when we take userTwo it will take the refrence from user one like its original value so when we will chnage to userTwo email or anything the userOne will also chnage 
+ 
+
+ 
+ 
+
